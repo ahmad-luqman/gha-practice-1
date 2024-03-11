@@ -6,4 +6,4 @@ jobs:
     steps:
       - run: echo "event name is:" ${{ github.event_name }} 
       - run: echo "event type is:" ${{ github.event.action }}
-      - run: echo "event payload is:" ${{ toJson(github.event) }}
+      - run: echo "event payload is:" ${{ toJSON(github.event) }}
